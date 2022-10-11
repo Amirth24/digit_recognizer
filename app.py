@@ -12,7 +12,7 @@ app = Flask(__name__)
 class DigitClassifier:
     def __init__(self, image = None) -> None:
         self.image = image or np.zeros((20, 20, 20)) 
-        self.model = models.load_model('digit_recognizer.h5')
+        self.model = models.load_model('digit_recognizer_2.h5')
         print('Model Loaded Sucessfully!')
     
     def show(self):
